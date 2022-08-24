@@ -17,6 +17,14 @@ def operacion_basica(a: float, b: float, multiplicar: bool) -> Union[float, str]
 
 
 # NO MODIFICAR - INICIO
+    if multiplicar == True:
+        resultado = a*b
+    elif b == 0 :
+        resultado = "Operación no válida"
+    else: 
+         resultado = a/b
+    return resultado
+
 assert operacion_basica(1, 1, True) == 1
 assert operacion_basica(1, 1, False) == 1
 assert operacion_basica(25, 5, True) == 125
@@ -25,6 +33,7 @@ assert operacion_basica(0, 5, True) == 0
 assert operacion_basica(0, 5, False) == 0
 assert operacion_basica(1, 0, True) == 0
 assert operacion_basica(1, 0, False) == "Operación no válida"
+
 # NO MODIFICAR - FIN
 
 
@@ -43,6 +52,12 @@ def operacion_multiple(a: float, b: float, multiplicar: bool) -> Union[float, st
 
 
 # NO MODIFICAR - INICIO
+    if multiplicar == True:
+        return a*b
+    if b == 0 :
+        return "Operación no válida"
+    return a/b
+    
 assert operacion_multiple(1, 1, True) == 1
 assert operacion_multiple(1, 1, False) == 1
 assert operacion_multiple(25, 5, True) == 125
