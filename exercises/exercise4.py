@@ -75,9 +75,9 @@ def es_vocal_in(letra: str) -> bool:
         - No utilizar listas.
     """
 
-    letra= str.lower(letra)
-    letra in "aeiou" 
-    return True
+    letra = str.lower(letra)
+    j = letra in "aeiou" 
+    return j
 # NO MODIFICAR - INICIO
 assert es_vocal_in("a")
 assert not es_vocal_in("b")
